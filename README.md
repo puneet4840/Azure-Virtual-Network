@@ -32,10 +32,18 @@ Components are like when we create a vnet, what are the things created with it?
 
 5 - Route Tables.
 
-**NSG (Network Security Group)**
+### NSG (Network Security Group)
 
 Network Security Group is a collection of security rules that filter incoming and outgoing traffic to and from resources like virtual machines, databases,etc.
 
-Security rules are like which traffic can come to our resource and which traffic can not come to resource. e.g. Port 80, Port 443, SSH 22, etc.
-
 e.g., Suppose you have a web application running on vm in azure. You want the web application to be accessible to users over the internet, for that you have to allow port (80) and port (443) so that http requests are made to the web application and users can access it. You can acheive this using the NSG. Here simply you have to open port (80) and port (443) inside inbound rules inside NSG. This is how we use the NSG and allow traffic to our resources.
+
+**Key Concepts**
+
+Rules: NSG contains list of security rules that define whether to allow or deny traffic based on various criteria.
+
+Criteria: Security rules within and NSG are set either _Inbound_ or _Outbound_ and have five additional properties to determine how to handle network traffic:
+
+- Source: The origin of the network traffic, This could be an IP Address. This means specific IP address are only allowed to access the network.
+
+- Destination: 
