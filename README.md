@@ -17,3 +17,25 @@ Suppose Nike and Puma's devops engineer need vms in the same region and same ava
 This is how azure secure the people's resources using the virtual network. Virtual network create a logical isolation inside the azure's on-premise network. Virtual Network is only the isolation of resources.
 
 e.g. A hospital might have a virtual network with a subnet for patient record databases and another subnet for administrative systems. This keeps sensitive patient data seperate from everyday administrative tasks.
+
+**Components of Virtual Network**
+
+Components are like when we create a vnet, what are the things created with it?
+
+1 - Subnet.
+
+2 - NSG (Network Security Grougs).
+
+3 - IP Addresses.
+
+4 - Firewall.
+
+5 - Route Tables.
+
+**NSG (Network Security Group)**
+
+Network Security Group is a collection of security rules that filter incoming and outgoing traffic to and from resources like virtual machines, databases,etc.
+
+Security rules are like which traffic can come to our resource and which traffic can not come to resource. e.g. Port 80, Port 443, SSH 22, etc.
+
+Suppose you have a web application running on vm in azure. You want the web application to be accessible to users over the internet, for that you have to allow port (80) and port (443) so that http requests are made to the web application and users can access it. You can acheive this using the NSG. Here simply you have to open port (80) and port (443) inside inbound rules inside NSG. This is how we use the NSG and allow traffic to our resources.
