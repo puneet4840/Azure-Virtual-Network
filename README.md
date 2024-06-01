@@ -38,4 +38,4 @@ Network Security Group is a collection of security rules that filter incoming an
 
 Security rules are like which traffic can come to our resource and which traffic can not come to resource. e.g. Port 80, Port 443, SSH 22, etc.
 
-Suppose you have a web application running on vm in azure. You want the web application to be accessible to users over the internet, for that you have to allow port (80) and port (443) so that http requests are made to the web application and users can access it. You can acheive this using the NSG. Here simply you have to open port (80) and port (443) inside inbound rules inside NSG. This is how we use the NSG and allow traffic to our resources.
+e.g., Suppose you have a web application running on vm in azure. You want the web application to be accessible to users over the internet, for that you have to allow port (80) and port (443) so that http requests are made to the web application and users can access it. You can acheive this using the NSG. Here simply you have to open port (80) and port (443) inside inbound rules inside NSG. This is how we use the NSG and allow traffic to our resources.
