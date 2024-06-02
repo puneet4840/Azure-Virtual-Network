@@ -82,7 +82,7 @@ A subnet is the small network divided form a large network.
 
 Subnetting is the process of creating a subnet.
 
-e.g., Suppose there is a network in a company, it has multiple departments like Finance, Payroll, Sales and Development. If company assign a single complete network to all these departments, If any employee from from sales department access malicious website and hacker got that device access through that malicous website. Now hacker can access all those device which are in the same network. This can be very dangerous situation for the company. 
+e.g., Suppose there is a network in a company, it has multiple departments like Finance, Payroll, Sales and Development. If a company assign a single complete network to all these departments, If any employee from from sales department access malicious website and hacker got that device access through that malicous website. Now hacker can access all those device which are in the same network. This can be very dangerous situation for the company. 
 
 To avoid this subnetting is being used. Company can create a subnet for each department in the company.
 
@@ -91,3 +91,23 @@ To avoid this subnetting is being used. Company can create a subnet for each dep
 1 - Private Subnet: The network which does not have access to the Internet.
 
 2 - Public Subnet: The network which has access to the Internet.
+
+
+## Advance Networking Features
+
+### VNet Peering
+
+VNet peering means to connect two or more virtual networks with each other.
+
+                                OR
+
+VNet perring is the feature in azure that establish a direct connection between two or more virtual network with each other.
+
+**Why do we need VNet peering**
+
+We need VNet peering to securely communicate between the resources in the two different virtual network thorugh private IPs.
+
+e.g., ![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/a0026485-b5e1-4346-baf5-607f22a95dbd)
+
+In the above example we have two VNets and inside those VNets there are virtual machines. So these VNets do not have direct connection (peering) between them, thus those VMs cannot communicate to each other.
+To have a communication between them we need to establish a Vnet peering between those virtual networks. VNet peering here allows us to ping VM2 from VM1 using there private IP. VNet establish a secure connection so that resources can communicate without expose to the outside world.
