@@ -65,4 +65,29 @@ NSG is attached to either _Subnets_ or individual _Network Interfaces_ (NIC) of 
 
 ### ASG (Application Security Group)
 
+ASG are the security rules that allow to group your virtual machines and apply network security rules based on these groups rather than individually configuring each vm.
 
+### IP Address
+
+IP (Internet Protocol) address is the unique address for a device that is used to identify a device on the internet. 
+
+e.g. You have a router provided by your Internet Service Provider (ISP) like we have a Jio Fiber wifi. Jio has provided a router which has a global IP address. All devices connected to this router will have the same IP Address that IP address is the local IP Address given using the DHCP protocol by the router.
+If any of the devices make a request to google that means that router is making a request to google because router has the global IP address. Google sends response to router then router decides which device to send that response and that is done by NAT (Network Access Translation).
+
+Now router knows that device 1 made the google request but which application in device 1 made that request. IP address decides which device to send the data but how to decide which application to send the data to that device. That is done by the **PORT** numbers.
+
+### Subnet
+
+A subnet is the small network divided form a large network.
+
+Subnetting is the process of creating a subnet.
+
+e.g., Suppose there is a network in a company, it has multiple departments like Finance, Payroll, Sales and Development. If company assign a single complete network to all these departments, If any employee from from sales department access malicious website and hacker got that device access through that malicous website. Now hacker can access all those device which are in the same network. This can be very dangerous situation for the company. 
+
+To avoid this subnetting is being used. Company can create a subnet for each department in the company.
+
+**Types of Subnet**
+
+1 - Private Subnet: The network which does not have access to the Internet.
+
+2 - Public Subnet: The network which has access to the Internet.
