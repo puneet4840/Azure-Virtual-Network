@@ -101,7 +101,7 @@ VNet peering means to connect two or more virtual networks with each other.
 
                                 OR
 
-VNet perring is the feature in azure that establish a direct connection between two or more virtual network with each other.
+VNet peering is the feature in azure that establish a direct connection between two or more virtual network with each other.
 
 **Why do we need VNet peering**
 
@@ -111,3 +111,14 @@ e.g., ![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/650639
 
 In the above example we have two VNets and inside those VNets there are virtual machines. So these VNets do not have direct connection (peering) between them, thus those VMs cannot communicate to each other.
 To have a communication between them we need to establish a Vnet peering between those virtual networks. VNet peering here allows us to ping VM2 from VM1 using there private IP. VNet establish a secure connection so that resources can communicate without expose to the outside world.
+
+**Types of VNet Peering**
+
+Two types of VNet peering:-
+
+1 - Regional VNet Peering (Same Regions):- Peering between the Vnets in the same azure regions. When two Vnets are created in the same azure region (EastUS-1) and privately connected to each other and resources inside vnets are accessible through private ips.
+
+2 - Global VNet Peering (Different Regions):- Perring between the Vnets in the different azure regions. When two Vnets are created in the different azure regions (vnet1: EastUS, vnet2: WestUS) and privately connected to each other and resources inside the vnets are accessible through private ips.
+
+**How VNet Peering Works**
+
