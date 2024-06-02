@@ -46,4 +46,23 @@ Criteria: Security rules within and NSG are set either _Inbound_ or _Outbound_ a
 
 - Source: The origin of the network traffic, This could be an IP Address. This means specific IP address are only allowed to access the network.
 
-- Destination: 
+- Destination: The desination of the network traffic, This could be an Ip Address. This means incomming traffic destination.
+
+- Port: The port number on which traffic is received (80 for HTTP, 443 for HTTPS).
+
+- Protocol: The type of protocol used (TCP, UDP, ICMP).
+
+**Components of NSG rule**
+
+Priority: Each rule has priority number, lower numbers indicating higher priority. Azure processes NSG rules in order of their priority.
+
+Action: The action can be either allow or deny, if action set to allow it allows the traffic matches the rule. If action set to deny it deny all the traffic that matches the rule.
+
+**How NSG works?**
+
+NSG is attached to either _Subnets_ or individual _Network Interfaces_ (NIC) of virtual machines. NSG when attached with subnet, the NSG rules apply to all resources within that subnet. NSG when attached with NIC, the NSG rules apply only to that specific NIC of virtual machine. 
+
+
+### ASG (Application Security Group)
+
+
