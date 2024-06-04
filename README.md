@@ -120,5 +120,13 @@ Two types of VNet peering:-
 
 2 - Global VNet Peering (Different Regions):- Perring between the Vnets in the different azure regions. When two Vnets are created in the different azure regions (vnet1: EastUS, vnet2: WestUS) and privately connected to each other and resources inside the vnets are accessible through private ips.
 
-**How VNet Peering Works**
+**VNet Peering Features**
+
+1- Direct Connectivity. 2- Low Latency. 3- High Bandwidth. 4- Resource Sharing.
+
+**NOTE**
+
+VNet peering does not support transitive peering. That means if Vnet-1 is peered to Vnet-2 and Vnet-2 is peered to Vnet-3 than Vnet-1 cannot connect with Vnet3 or the resources inside Vnet1 cannot access Vnet3 directly. e.g., a=b, b=c, a!=c.
+
+
 
