@@ -128,5 +128,25 @@ Two types of VNet peering:-
 
 VNet peering does not support transitive peering. That means if Vnet-1 is peered to Vnet-2 and Vnet-2 is peered to Vnet-3 than Vnet-1 cannot connect with Vnet3 or the resources inside Vnet1 cannot access Vnet3 directly. e.g., a=b, b=c, a!=c.
 
+**Step by Step VNet peering configuration**
 
+Step-1: Create teo virtual networks in the same region or different regions like **VNet1**, **VNet2**.
+
+Step-2: Now go to any of the **virtual networks** and select **Peering**, under **settings**, and then select **Add**.
+
+![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/2dc96305-90ae-4c89-b950-879f26e73b6e)
+
+Step-3: Configuring the peering for two virtual networks and select **Add**.
+
+![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/fe8242ff-10cb-44fc-a53d-6516a046a4a7)
+
+This Virtual Network: means the VNet 1.
+
+Remote Virtual Network: means the VNet 2 ehich you want to peer with vnet1.
+
+Step-4: The **PEERING STATUS** is connected, as shown in the following picture.
+
+![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/36d15c1a-56d3-4921-90c1-5129686a315b)
+
+Step-5: Now connect any one of your vm and try to ping the private ip of second vm.
 
