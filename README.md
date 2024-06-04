@@ -1,4 +1,4 @@
-# Azure-Virtual-Network
+![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/22067757-1483-46c5-bbcc-963ade29bd71)# Azure-Virtual-Network
 
 ### What is Virtual Network in Azure?
 
@@ -149,4 +149,36 @@ Step-4: The **PEERING STATUS** is connected, as shown in the following picture.
 ![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/36d15c1a-56d3-4921-90c1-5129686a315b)
 
 Step-5: Now connect any one of your vm and try to ping the private ip of second vm.
+
+### VPN Gateway
+
+**What is VPN?**
+
+A VPN (Virtual Private Network) is a mechanism that creates a secure and encrypted connection between your device and a network. 
+
+**How VPN Works?**
+
+When you connect to a VPN, here's what happens:
+
+1 - Connection Established: You connects to a VPN server, through a vpn client application on your device such as Nord_VPN (client application on your device).
+
+2 - Encryption: Your data is encrypted when it leaves your device.
+
+3 - Data Transmission: The enrypted data is sent through vpn tunnel to the VPN server from your device (Tunnel is the secure pathway).
+
+4 - Decryption: The VPN server decrypts your data and sends it to the destination on the internet.
+
+5 - Response Transmission: Any data coming back to you follows the same process: it is encrypted by the VPN server, sent through the tunnel, and decrypted by your VPN client.
+
+**Real Life Examples**
+
+e.g. Remote Work
+
+Scenario: An employee is working from home and needs to access the company's internal network securely.
+
+  - Without VPN: The emplyee's data travels over the internet, making it vulnerable to interception.
+
+  - With VPN: The employee connects to company's vpn. Their data is encrypted and securely sent through the VPN tunnel to the company's network. This allows them to access internal resources like databases and file servers as if they were in the office.
+
+**What is VPN Gateway?**
 
