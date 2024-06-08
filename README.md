@@ -182,3 +182,37 @@ Scenario: An employee is working from home and needs to access the company's int
 
 **What is VPN Gateway?**
 
+VPN Gateway is a service in azure which securely connects your (device, on-premise network, azure virtual network) to azure virtual network.
+
+It acts as a secure bridge between your **device and azure virtual network**, **on-premise network and azure virtual network** and **between two azure virtual networks**.
+
+We use azure vpn gateway to securely connect to azure virtual network.
+
+**Core Components used in VPN Gateway**
+
+1 - Virtual Network:- A private network within your azure wher you can deploy resources like vm or databases.
+
+2 - Gateway Subnet:- A subnet for your VPN Gateway resource within a Vnet. It should ne named _GatewaySubnet_.
+
+3 - VPN Gateway:- A vpn gateway resource that can establish secure communication.
+
+4 - Public IP Address:- The VPN Gateway needs a public ip address to faciliate communiction over internet.
+
+5 - Local Network Gateway:- A LNG resource that represents your on-premise network, LNG only needed in Site-to-Site connection.
+
+**Setup and Configuration**
+
+Step-1: Create a VNet and Gateway subnet:
+
+- Create a VNet in azure with atleast one subnet. Add a _Gateway Subnet_ for the VPN Gateway. This subnet is crucial as it hosts the vpn gateway services.
+
+Step-2: Deply the VPN Gateway:
+
+- Create a VPN Gateway resource in azure and deploy it within the _Gateway Subnet_ you created earlier. During this step, you will allocate a public ip address to the vpn gateway.
+
+Step-3: Create a Local Network Gateway (for site-to-site configuration):
+
+- For site-to-site connections, define a local network gateway that represents your on-premise network
+
+**Establishing the VPN Connection**
+
