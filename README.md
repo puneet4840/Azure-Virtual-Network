@@ -1,4 +1,4 @@
-![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/22067757-1483-46c5-bbcc-963ade29bd71)# Azure-Virtual-Network
+# Azure-Virtual-Network
 
 ### What is Virtual Network in Azure?
 
