@@ -214,5 +214,23 @@ Step-3: Create a Local Network Gateway (for site-to-site configuration):
 
 - For site-to-site connections, define a local network gateway that represents your on-premise network
 
-**Establishing the VPN Connection**
+**Establishing the VPN Connection (Point-to-Site)**
+
+Step-1: Generate VPN Client configuration:
+
+- Go to newly created VPN Gateway. Under point-to-site configuration, click configure now and fill necessary details.
+
+Step-2: Generate VPN Client Certificates:
+
+- **Root Certificate**: Create a root certificate using tool like powershell using commands.
+
+- **Client Certificate**: Generate Client certificate using the root certificate.
+
+- Upload the root certificate(name and key) to the vpn gateway configuration and download the vpn client.
+
+Step-3: Download and Install the VPN Client.
+
+Step-4: Connect to the VPN.
+
+Now you are able to connect to your vm using its private ip address.
 
