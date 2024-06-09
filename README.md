@@ -283,3 +283,20 @@ In the above image Microsoft gives the tender to their parterners like Airtel, J
 
 
 ## Network Security
+
+Securing an azure virtual network is a crucial step in azure networking. Microsoft provides varios tools, services and techniques to secure network traffic and resources from unauthorized access.
+
+**Key Components of Azure Network Security**
+
+1 - Network Security Groups (NSG).
+
+2 - Application Security Groups (ASG).
+
+3 - Azure Firewall.
+
+4 - Azure DDos Protection.
+
+Note:- NSg and ASG already explained above.
+
+### Azure Firewall
+
