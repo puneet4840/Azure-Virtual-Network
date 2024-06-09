@@ -242,3 +242,15 @@ Step-4: Connect to the VPN.
 
 Now you are able to connect to your vm using its private ip address. Distribute the VPN Client to employees, Employees can use vpn client securely connect to azure vnet.
 
+**EStablishing the VPN Connection (Site-to-Site)**
+
+Step-1: Create a VNet and a _Gateway Subnet_ inside the vnet.
+
+Step-2: Create VPN Gateway.
+
+Step-3: Create the Local Network Gateway to connect with on-premise network. This LNG connects vpn gateway to on-premise network.
+
+Step-4: Create VPN Connection.
+
+Step-5: Configure the on-premise VPN device and connect.
+
