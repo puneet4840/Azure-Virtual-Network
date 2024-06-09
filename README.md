@@ -204,7 +204,7 @@ We use azure vpn gateway to securely connect to azure virtual network.
 
 1 - Point-to-Site VPN: Securely connecting a device to azure virtual network.
 
-2 - Site-to-Site VPN: Securely connecting on-premise network to azure virtual network.
+2 - Site-to-Site VPN: Securely connecting on-premise network to azure virtual network over an encrypted connection via public internet.
 
 3 - Vnet-to-Vnet VPN: Securely connecting a azure virtual network to azure virtual network.
 
@@ -242,6 +242,7 @@ Step-4: Connect to the VPN.
 
 Now you are able to connect to your vm using its private ip address. Distribute the VPN Client to employees, Employees can use vpn client securely connect to azure vnet.
 
+
 **EStablishing the VPN Connection (Site-to-Site)**
 
 Step-1: Create a VNet and a _Gateway Subnet_ inside the vnet.
@@ -253,4 +254,8 @@ Step-3: Create the Local Network Gateway to connect with on-premise network. Thi
 Step-4: Create VPN Connection.
 
 Step-5: Configure the on-premise VPN device and connect.
+
+e.g. (Site-to-Site VPN example)
+
+A company has an on-premises data center and wants to extend its network to Azure for additional capacity or disaster recovery. It can use site-to-site vpn connection.
 
