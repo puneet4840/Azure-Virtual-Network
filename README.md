@@ -232,5 +232,5 @@ Step-3: Download and Install the VPN Client.
 
 Step-4: Connect to the VPN.
 
-Now you are able to connect to your vm using its private ip address.
+Now you are able to connect to your vm using its private ip address. Distribute the VPN Client to employees, Employees can use vpn client securely connect to azure vnet.
 
