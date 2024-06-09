@@ -200,6 +200,14 @@ We use azure vpn gateway to securely connect to azure virtual network.
 
 5 - Local Network Gateway:- A LNG resource that represents your on-premise network, LNG only needed in Site-to-Site connection.
 
+**Types of VPN in Azure**
+
+1 - Point-to-Site VPN: Securely connecting a device to azure virtual network.
+
+2 - Site-to-Site VPN: Securely connecting on-premise network to azure virtual network.
+
+3 - Vnet-to-Vnet VPN: Securely connecting a azure virtual network to azure virtual network.
+
 **Setup and Configuration**
 
 Step-1: Create a VNet and Gateway subnet:
