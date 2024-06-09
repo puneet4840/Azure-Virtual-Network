@@ -277,3 +277,6 @@ It provides more reliability, faster speed, lower latency and faster speed by us
 
 ![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/40c7f13c-023f-4eca-b292-d2a8168f801a)
 
+The private connection is done through the physical cable from ExpressRoute Circuit to on-premise network. This means there is a seperate connection through cable from the microsoft data center to the on-premise network.
+
+In the above image Microsoft gives the tender to their parterners like Airtel, Jio, etc. The give a direct connection from microsoft data center's to a limited location like Mumbai. From that limited location local vendors provide direct connection to on-premise network. It is a physical connection.
