@@ -1,4 +1,4 @@
-# Azure-Virtual-Network
+![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/d90d64cf-6336-4e82-a3d9-894750fe52da)# Azure-Virtual-Network
 
 ### What is Virtual Network in Azure?
 
@@ -258,4 +258,22 @@ Step-5: Configure the on-premise VPN device and connect.
 e.g. (Site-to-Site VPN example)
 
 A company has an on-premises data center and wants to extend its network to Azure for additional capacity or disaster recovery. It can use site-to-site vpn connection.
+
+![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/221a90be-2c12-4d6c-8687-e0272a570602)
+
+
+**Limitations of Site-to-Site VPN**
+
+Limitation is that the data travels via internet. Most companies don't want their confidential data should travel via internet. To overcome this situation Azure ExpressRoute is being used.
+
+
+### Azure ExpressRoute
+
+ExpressRoute is the dedicated private connection between your on-premises network and Microsoft Azure (Azure VNet, PaaS Services).
+
+It provides more reliability, faster speed, lower latency and faster speed by using a private network connection.
+
+![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/05dfbcfe-c538-4192-b92d-6b324b1b4bdc)
+
+![image](https://github.com/puneet4840/Azure-Virtual-Network/assets/65063977/40c7f13c-023f-4eca-b292-d2a8168f801a)
 
