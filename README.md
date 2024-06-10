@@ -300,3 +300,16 @@ Note:- NSg and ASG already explained above.
 
 ### Azure Firewall
 
+**What is Firewall?**
+
+A Firewall is a network security system which control the incoming and outgoing network traffic based on the predefined rules.
+
+It can be a physical hardware, software and a platform as a service (PaaS). We use firewalls to allow non-threatning traffic and keep dangerous traffic out.
+
+**What is Azure Firewall?**
+
+Azure Firewall is a network security service which protects the virtual network resources from unauthorized access.
+
+We are securing the Vnet for that we have two ways to secure it. First is using NSG and Second is using Firewall. If we can do using it NSg then why do we need Firewall.
+
+We need firewall because we can allow or deny access on the domain level through Firewall but we can allow or deny access on the subnet or NIC level thorugh NSG. We can secure the Vnet on the domaain level that's why we are using Firewall here.
