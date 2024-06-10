@@ -312,4 +312,4 @@ Azure Firewall is a network security service which protects the virtual network 
 
 We are securing the Vnet for that we have two ways to secure it. First is using NSG and Second is using Firewall. If we can do using it NSg then why do we need Firewall.
 
-We need firewall because we can allow or deny access on the domain level through Firewall but we can allow or deny access on the subnet or NIC level thorugh NSG. We can secure the Vnet on the domaain level that's why we are using Firewall here.
+We need firewall because we can allow or deny access on the domain level or Url through Firewall but we can allow or deny access on the subnet or NIC level thorugh NSG. We can secure the Vnet on the domain level or application URL that's why we are using Firewall here.
