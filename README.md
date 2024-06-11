@@ -315,3 +315,26 @@ We are securing the Vnet for that we have two ways to secure it. First is using 
 We need firewall because we can allow or deny access on the domain level or Url through Firewall but we can allow or deny access on the subnet or NIC level thorugh NSG. We can secure the Vnet on the domain level or application URL that's why we are using Firewall here.
 
 
+### Routing and Traffic Control
+
+**What is Routing?**
+
+Routing is the process of finding a best way to send a data packet to its destination over a network.
+
+Routing is performed by a special device called router.
+
+e.g. In a computer network data travels in small packets, Each packet has a souce and destination address on it. So networking device needs a little help figuring out the best path to send these data packets. So here _router_ comes in. Router forward these data packets to their destination. But to send these data packets router needs the best path. To find this best path is called _Routing_. Router perform this routing but router needs the path. This path is stored in _Route Table_.
+
+**What is Route Table?**
+
+A Route Table is a table that stores the location of routers based on their ip address which are immediately around it. 
+
+                                        OR
+
+A Route Table is a table inside router which stores the information of network topology which is immediate around it.
+
+**How Routing Works?**
+
+When you want to send data from your computer to another device, your computer needs to know how to send the data there. Every device on network has a unique address called IP Address. This ip address helps in identifying the destination. Actually the destination ip the actual destination where the data goes.
+
+Your computer cheks its routing table to see if it knows the direct path to destination, If your computer does not know the direct path the it send the data to other router in the network. The router receives the data and checks inside its routing table. It finds the best route (destination) and forward the data accordingly.
